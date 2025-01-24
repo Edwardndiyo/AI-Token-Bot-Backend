@@ -10,6 +10,7 @@ from firebase_admin import credentials, firestore, storage
 from telebot import types
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
+# updated code to use new bot token
 # initialize bot
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 bot = AsyncTeleBot(BOT_TOKEN)
