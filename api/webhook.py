@@ -23,7 +23,7 @@ bucket = storage.bucket()
 
 def generate_start_keyboard():
     keyboard = InlineKeyboardMarkup()
-    keyboard.add(InlineKeyboardButton("Open Coach-Ed App", web_app=WebAppInfo(url="https://coachedtoken.vercel.app/")))  #input your hosted netlify url here 
+    keyboard.add(InlineKeyboardButton("Open WallStreat App", web_app=WebAppInfo(url="https://coachedtoken.vercel.app/")))  #input your hosted netlify url here 
     return keyboard
 
 @bot.message_handler(commands=['start'])
@@ -37,8 +37,9 @@ async def start(message):
     text = message.text.split()
     welcome_message = (
         f"Hi, {user_first_name}! ✌️ \n\n"
-        f"Welcome to Coach-Ed Token! \n\n"
+        f"Welcome to WallStreat bot! \n\n"
         f"Here you can earn coins by mining them! \n\n"
+        f"You can also leverage on our escrow P2P exchange to trade coins with peers! \n\n"
         f"Invite friends to earn more coins together, and level up faster !🚀"
     )
 
